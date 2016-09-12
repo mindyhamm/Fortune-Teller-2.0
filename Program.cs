@@ -23,19 +23,9 @@ namespace Fortune_Teller_2._0
             int age;
             int birthMonth;
             string color;
-            string helpROYGBIV;
+            string favColor;
             int siblings;
-            char R;
-            char O;
-            char Y;
-            char G;
-            char B;
-            char I;
-            char V;
-
-
-
-
+                       
             Console.WriteLine("What is your first name?");
             firstName = Console.ReadLine();
 
@@ -45,36 +35,39 @@ namespace Fortune_Teller_2._0
             Console.WriteLine("How old are you?");
             age = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("What is your birth month? Enter as a number");
+            Console.WriteLine("What is your birth month? Enter as a number.");
             birthMonth = int.Parse(Console.ReadLine());
 
             Console.WriteLine("What is your favorite ROYGBIV color?");
+            favColor = Console.ReadLine();
+                
+            Console.WriteLine("If you do not know what ROYGBIV is, enter 'HELP' to get a list of the ROYGBIV colors.");
             color = Console.ReadLine();
 
-            Console.Write("If you do not know what ROYGBIV is, enter 'HELP' to get a list of the ROYGBIV colors.");
+            bool HELP = true;
 
-            bool HELP == true;
-            if (HELP)
+            if(HELP==true)
             {
-                (Console.ReadLine(HELP);
+                Console.WriteLine("R = red\nO = orange\nY = yellow\nG = green\nB = blue\nI = indigo\nV = violet");
             }
-            /*  int R = red;
-               int O = orange;
-               int Y = yellow;
-               int G = green;
-               int B = blue;
-               int I = indigo;
-               int v = violet;*/
-
-            //should be a color or HELP
-
-            //Use switch case for each color
-
             Console.WriteLine("How many siblings do you have?");
             siblings = int.Parse(Console.ReadLine());
 
-            //PART2
-            // use modules for even/odd calculation
+            //PART2   // use modules for even/odd calculation |
+            /*int userAge = (this is where i would insert an decrement -- or increment ++ for odd/even yrs of age?
+            int siblingZero 
+            int siblingOne
+            var locationOne
+            var locationTwo
+            var store?
+            if userAge odd "you will retire in __ yrs" || if userAge even "you will retire in __yrs"
+            || user siblingZero "you will have a vacation home in __ || if siblingOne "you will have a vacation home in __"
+            || user has siblingTwo "you will live in locationThree" || siblingThree "you will live in locationFour 
+            ||
+
+
+            PART3
+            [First Name] [Last Name] will retire in [# of Years] with [Amount of Money] in the bank, a vacation home in [Location] and a [Mode of Transportation].
         }
     }
 }
